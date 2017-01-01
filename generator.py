@@ -32,7 +32,7 @@ def post_request():
     # schema.json refers to the schema definition of the output json to be generated
     # Refer official documentation for supported types and detailed explanation
 
-    with open('schema.json', 'r') as datafile:
+    with open(args.file, 'r') as datafile:
         fields = json.load(datafile)
         
     # declare arguments required for post request to Mockaroo
