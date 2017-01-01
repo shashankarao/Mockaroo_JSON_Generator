@@ -47,7 +47,7 @@ def post_request():
     response = requests.post(url, params=payload)
 
     # Write the output to a file ex. (output.json)
-    with open('output.json', 'w') as outfile:
+    with open('output.%s' % args.schema[0], 'w') as outfile:
         outfile.write(response.text)
 
 
