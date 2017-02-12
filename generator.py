@@ -10,7 +10,7 @@ Official documentation site: https://www.mockaroo.com/api/docs
 parser = argparse.ArgumentParser(description='Retrieve data from Mockaroo API')
 # file is required parameter
 parser.add_argument('file',
-                    help='REQUIRED: Configuratoin file to use')
+                    help='REQUIRED: Configuration file to use')
 # key is required parameter
 parser.add_argument('-k','--key', nargs=1,
                     help='REQUIRED: Enter the API key for Mockaroo')
